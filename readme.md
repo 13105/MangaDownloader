@@ -1,0 +1,1 @@
+adicionar Manifest.json nas extensões do firefox

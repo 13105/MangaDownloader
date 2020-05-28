@@ -1,0 +1,37 @@
+{
+	"manifest_version":	2,
+	"name":	"MLD",
+	"version": "0.1",
+	"author":"B105",
+
+	"description": "Baixar mangás de mangalivre.com",
+	"applications": {
+		"gecko": {
+			"id":"mld@mdl"
+		}
+	},
+
+
+	"icons": {
+		"48":"SAT48.png",
+		"96":"SAT96.png"
+	},
+
+	"permissions": [
+		"*://mangalivre.com/*",
+		"*://static2.mangalivre.com/*"
+	],
+
+	"content_scripts": [
+	    {
+	      "matches":["*://mangalivre.com/manga/*/*"],
+				"js":["FileSaver.js","a.js"],
+				"css":["a.css"]
+
+	    }
+	]
+
+
+
+
+}
